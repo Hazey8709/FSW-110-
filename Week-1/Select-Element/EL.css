@@ -1,0 +1,26 @@
+/* CSS    Element-Selecting */
+
+title {
+    font-family: "Times New Roman", Times, serif;
+    color: red;
+    text-decoration-style: dashed;
+}
+
+* {
+    background: lightgray;
+}
+
+header {
+    color: red;
+}
+
+h1 {
+    text-indent: 0.3in;
+    color: royalblue;
+}
+
+p {
+    font-style: italic, bold;
+    color: maroon;
+    text-indent: 0.3in;
+}
