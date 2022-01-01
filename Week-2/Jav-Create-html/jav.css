@@ -1,0 +1,25 @@
+body {
+    background-color: gray;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    border: black solid;
+    background-color: darkblue;
+}
+
+li {
+    padding: 15px;
+    font-size: 20px;
+    background-color: lightblue;
+}
+
+footer {
+    height: 50px;
+    background: blueviolet;
+    display: flex;
+    justify-content: center;
+    border: 45px black;
+}
