@@ -1,0 +1,79 @@
+/*      CSS MAIN  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 175, 175);
+}
+
+.calculator {
+    width: 400px;
+}
+
+.screen {
+    width: 400px;
+    font-size: 30px;
+    padding: 2.5rem;
+    background: rgb(82, 82, 95);
+    color: rgb(255, 2, 2);
+    border: 4px solid black;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+}
+
+button {
+    flex: 0 0 25%;
+    border: 2px solid black;
+    padding: 1.5rem;
+    transition: all 2s ease;
+}
+
+button:hover {
+    background: blue;
+    color: white;
+    border: 2px solid red;
+}
+
+.btn-yellow {
+    background: rgba(8, 151, 247, 0.466);
+    color: black;
+    font-weight: bold;
+}
+
+.btn-grey {
+    background: rgb(201, 199, 199);
+}
+
+.btn,
+.btn-equal,
+.btn-clear {
+    font-size: 2rem;
+}
+
+.btn-equal {
+    background: rgba(0, 128, 0, 0.541);
+    font-weight: bold;
+}
+
+.btn-clear {
+    background: rgba(255, 0, 0, 0.5);
+    font-weight: bold;
+    margin-left: 1.6in;
+}
+
+#dot-color {
+    background-color: rgba(8, 151, 247, 0.466);
+    font-weight: bold;
+}
