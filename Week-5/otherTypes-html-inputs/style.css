@@ -1,0 +1,12 @@
+/*  CSS Page */
+
+body {
+    background-color: rgb(201, 197, 197);
+}
+
+#gridContainer {
+    text-align: center;
+    margin-top: 10%;
+    border: 5px solid black;
+    border-width: 10px;
+}
