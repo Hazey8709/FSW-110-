@@ -1,0 +1,26 @@
+#parent {
+    background: #ef8989;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+#child {
+    background: #0000ff;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+textarea {
+    height: 200px;
+    width: 500px;
+    display: block;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
