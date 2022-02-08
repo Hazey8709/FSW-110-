@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-image: url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.intro {
+    margin-top: 70px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    /* display: inline; */
+    justify-content: center;
+    word-spacing: 25px;
+    margin-right: 11px;
+}
+
+.space {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.icon-h {
+    font-size: 2.7em;
+    color: grey;
+}
+
+.icon-s {
+    font-size: 2.7em;
+    color: lightblue;
+}
+
+.icon-rh {
+    font-size: 2.7em;
+    color: red;
+}
+
+.space-footer {
+    margin-top: 140px;
+}
+
+/* modal pop up */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

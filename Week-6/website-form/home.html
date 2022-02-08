@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Coffee Devs</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CoffeeDevs</a>
+            <span class="navbar-text">
+                <a href="mailt0:jfortin802@gmail.com">
+                    Need Help?
+                </a>
+            </span>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div class="container intro">
+            <div class="row text-center">
+                <div class="col-md text-white">
+                    <br/>
+                    <h1 class="display-4">Coffee Devs</h1>
+                    <h1>Best Part of Waking Up</h1>
+                    <a href="mailto:jfortin802@gmail.com" class="btn btn-dark">
+                        MORE INFO
+                    </a>
+                </div>
+                <div class="col-md">
+                    <br/>
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="razor">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center space">
+        <h1 class="display-3">Our Inventory</h1>
+        <hr />
+        <div class="row">
+            <div class="col-md col-lg">
+                <br/>
+                <div onmouseover="price1()" onmouseout="Price1()" onclick="target()">
+                    <label>Espresso Shots</label>
+                    <span id="img1"class="text-danger">Your Price</span>
+                    <br/>
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid hover-shadow" />
+                </div>
+            </div>
+            <div class="col-md col-lg">
+                <br/>
+                <div onmouseover="price2()" onmouseout="Price2()"" onclick="target2()">
+                    <label>Coffee Beans</label>
+                    <span id="img2" class="text-danger">Your Price</span>
+                    <br />
+                    <img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="" class="img-fluid hover-shadow" />
+                </div>
+            </div>
+            <div class="col-md col-lg">
+                <br/>
+                <div onmouseover="price3()" onmouseout="Price3()" onclick="target3()">
+                    <label>House Coffee</label>
+                    <span id="img3"class="text-danger">Your Price</span>
+                    <br />
+                    <img src="https://images.unsplash.com/photo-1516486392848-8b67ef89f113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid hover-shadow" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container space">
+        <div class="row text-center">
+            <div class="col-md">
+                <h1>Shopping Total</h1>
+                <p>
+                    Thank you for shopping with us. Don't forget to register
+                    so that you may save your coffee preferences for faster
+                    checkout.
+                </p>
+                <form action="">
+                    <label for="price">Your Total Price:
+                        <span id="priceTotal"></span>
+                    </label> <br />
+                </form>
+                <br/>
+
+                <button id="myBtn" class="btn btn-dark btn-lg">CHECKOUT</button>
+
+                <div id="myModal" class="modal">
+
+                <div class="modal-content container">
+                    <span class="close">&times;</span>
+                    <form>
+                        <h1>Checkout Form</h1>
+                        <input type="text" required placeholder="Name" class="form-control" /> <br/>
+                        <input type="email" required class="form-control" placeholder="email" /> <br/>
+                        <input type="text" required class="form-control" placeholder="street address" /> <br/>
+                        <input type="text" required class="form-control" placeholder="city, state & zip" /> <br/>
+                        <input type="number" required class="form-control" placeholder="card info" /> <br/>
+                        <button type="submit" class="btn btn-dark">SUBMIT</button>
+                    </form>
+                </div>
+
+                </div>
+            </div>
+            <div class="col-md">
+                <img src="https://images.unsplash.com/photo-1509047319667-c1a8de3000c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="img-fluid h-100" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+
+    <footer class="text-center space-footer text-lg-start bg-light text-muted">
+
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+
+            <div>
+                <a href="https://facebook.com/krammer439298" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://google.com" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://instagram.com" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/stephen-brooks-897a1110a" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/StephenBrooks220413" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            &copy; 2022
+            <a class="text-reset fw-bold" href="#">CoffeeDevs.com</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
