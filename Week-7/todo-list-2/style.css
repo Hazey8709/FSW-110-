@@ -1,0 +1,168 @@
+/* ** CSS Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: lightgrey;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.addTask {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+
+.addTask > input[type="text"] {
+    width: 90%;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #666;
+    background: none;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+.addTask > input[type="text"]:hover {
+    background-color: rgba(131, 130, 130, 0.534);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 2px double #0005;
+}
+
+.addTask button {
+    margin: 0 10px;
+    background: #0005;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addTask button:hover {
+    color: green;
+    border: 2px solid green;
+    background-color: rgba(5, 248, 5, 0.521);
+}
+
+.addTask button:active {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    border: 1px solid red;
+}
+
+.notCompleted,
+.Completed {
+    margin: 5px 0;
+    padding: 20px;
+    transition: 2s;
+}
+
+h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h3-one-color {
+    color: red;
+}
+
+.h3-one-color:hover {
+    color: darkred;
+    border: 2px dotted darkred;
+    background-color: rgba(255, 0, 0, 0.281);
+    border-top: none;
+    border-radius: 10px;
+}
+
+.h3-two-color {
+    color: darkgreen;
+}
+
+.h3-two-color:hover {
+    color: darkgreen;
+    border: 2px solid black;
+    border-top: none;
+    background-color: rgba(2, 245, 2, 0.562);
+    border-radius: 10px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+ol li {
+    width: 100%;
+    padding: 16px;
+    margin: 5px 0;
+    background: #0005;
+    border-radius: 5px;
+    font-size: 16px;
+    counter-increment: my-counter;
+}
+
+ol li:hover {
+    background-color: rgba(255, 0, 0, 0.473);
+    border-bottom: 5px solid black;
+    border-left: 5px double rgb(51, 51, 51);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+ol.Completed li {
+    background: rgba(1, 141, 1, 0.562);
+    border-radius: 5px;
+}
+
+ol.Completed li:hover {
+    background: rgba(2, 245, 2, 0.562);
+    border-bottom: 5px solid darkgreen;
+    border-left: 5px double rgb(3, 143, 3);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+ol li::before {
+    content: counter(my-counter);
+    background: rgba(0, 0, 0, 0.712);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 40px;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: white;
+    margin-right: 1rem;
+}
+
+li button {
+    float: right;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
